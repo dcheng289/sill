@@ -43,3 +43,13 @@ When `W` is pressed, labels will be written to disk in a folder in the same plac
 - `W`: Write labels to disk.
 - `X`: Clear the current display.
 - `0`-`9`: Select class
+
+
+## Some labeling instructions (especially for tree turnks and light poles):
+1. Quality over quantity.
+2. Accuracy matters most, i.e., whatever you labeled as a tree trunk should be tree trunk, missing minor portion of tree trunks is acceptable.
+3. I suggest use a small value for period, such as 0.2. Otherwise, tree trunk and light pole may look blurred and hard to label accurately. 
+4. Label light pole first, then tree trunk.
+5. When you are labeling light poles, increase Z till the highest point that you think your sensor FOV can reach within a reasonable distance (e.g. 10 meters), and label the whole light pole at once.
+6. When you are labeling tree trunks, increase Z until you can start to see the canopy, then slightly decrease Z and you should be able to label the whole trunk at once. 
+7. Combine 2D and 3D views to make sure that you labeled them correctly.
