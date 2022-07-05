@@ -23,7 +23,7 @@ class SillCanvas(scene.SceneCanvas):
         self.updated_z_ = True
 
         self.text_ = scene.visuals.Text("Status",
-                                        color='black',
+                                        color='red',
                                         anchor_x='left',
                                         parent=self.view_,
                                         pos=(20, 50))
