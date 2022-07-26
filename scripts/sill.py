@@ -152,7 +152,7 @@ if __name__ == '__main__':
     parser.add_argument('bag')
     parser.add_argument('--start', type=int, default=0)
     parser.add_argument('--load', action='store_true')
-    parser.add_argument('--period', type=float, default=0.19)
+    parser.add_argument('--period', type=float, default=0.49)
     args = parser.parse_args()
 
     sc = SillCanvas(args.bag, args.start, args.period, args.load)
