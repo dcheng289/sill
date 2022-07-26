@@ -26,7 +26,8 @@ class SillCanvas(scene.SceneCanvas):
                                         color='red',
                                         anchor_x='left',
                                         parent=self.view_,
-                                        pos=(20, 50))
+                                        pos=(20, 50),
+                                        bold=True)
         self.update_text()
 
         self.cursor_size_ = 50
@@ -101,11 +102,11 @@ class SillCanvas(scene.SceneCanvas):
             self.redraw()
             self.cloud_render_ = {}
         elif event.key == 'PageUp':
-            self.cloud_.adjust_z(0.25, update=False)
+            self.cloud_.adjust_z(0.1, update=False)
             self.updated_z_ = False
             self.update_text()
         elif event.key == 'PageDown':
-            self.cloud_.adjust_z(-0.25, update=False)
+            self.cloud_.adjust_z(-0.1, update=False)
             self.updated_z_ = False
             self.update_text()
         elif event.key == 'O':
