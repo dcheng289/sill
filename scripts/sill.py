@@ -112,6 +112,7 @@ class SillCanvas(scene.SceneCanvas):
         elif event.key == 'O':
             self.mode_ = 'view3'
             self.view_.camera = scene.TurntableCamera()
+            self.view_.camera.center = (0,0,0)
         elif event.key == 'L':
             self.mode_ = 'label'
             self.view_.camera = scene.PanZoomCamera(aspect=1)
